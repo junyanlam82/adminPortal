@@ -1,0 +1,221 @@
+﻿body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Top Header*/
+#L_HEADER {
+    margin-left: 110px;
+    font-size: 18px;
+}
+
+#hlAward, #hlHelp {
+    width: 200px;
+    min-width: 200px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    color: #b3b3b3;
+    font-family: "Moserrar Subrayada", sans-serif;
+}
+
+#R_HEADER {
+    margin-top: -25px;
+    margin-left: 940px;
+    font-size: 18px;
+}
+
+#hlSignIn, #hlSignOut, #hlCart {
+    width: 200px;
+    min-width: 200px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    color: #b3b3b3;
+    font-family: "Moserrar Subrayada", sans-serif;
+}
+/*Navigation Bar*/
+#navPage {
+    text-align: center;
+    margin-left: 425px;
+    font-size: 18px;
+}
+
+#hlArtGallery, #hlPainting, #hlDrawing, #hlArtist {
+    padding: 0px 20px 0px 20px;
+    color: #b3b3b3;
+    font-family: "Moserrar Subrayada", sans-serif;
+}
+/*Home*/
+#homeIcon {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 545px;
+    font-size: 24px;
+}
+
+.auto-style2 {
+    width: 42px;
+}
+
+/*FOOTER*/
+#fUpperBackground {
+    width: 100%;
+    height: 300px;
+    min-width: 1000px;
+    margin-top: auto;
+    font-family: "Moserrar Subrayada", sans-serif;
+}
+
+#fDesign {
+    width: auto;
+    height: 120px;
+    background-color: #595959;
+    padding: 50px;
+}
+
+.fInfo {
+    float: left;
+    width: 25%;
+    height: auto;
+}
+
+    .fInfo h1 {
+        font-size: 18px;
+        color: #f2f2f2;
+        letter-spacing: 1px;
+    }
+
+    .fInfo ul {
+        margin-bottom: 20px;
+    }
+
+        .fInfo ul li {
+            list-style: none;
+            text-decoration: none;
+            padding-bottom: 5px;
+        }
+
+            .fInfo ul li a {
+                color: #f2f2f2;
+                font-size: 14px;
+                letter-spacing: 1px;
+                text-decoration: none;
+            }
+
+                .fInfo ul li a:hover {
+                    color: #cccccc;
+                    text-decoration: underline;
+                }
+
+/*Social Media Icons*/
+.fSocialMedia {
+    float: right;
+    width: 20%;
+    max-width: 275px;
+    height: auto;
+}
+
+    .fSocialMedia h1 {
+        font-size: 18px;
+        color: #f2f2f2;
+        letter-spacing: 1px;
+    }
+
+.fSocialMedia-size {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+/*Copyright*/
+#fCopyright {
+    width: 99%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: auto;
+    background-color: #262626;
+    position: absolute;
+    min-width: 1000px;
+}
+
+#fCopyright p {
+    float: right;
+    color: #f1f1f1;        
+     font-size: 15px;       
+     font-weight: 600;       
+    text-align: center;        
+    letter-spacing: 2px;        
+    margin-right: 25px;                
+}    
+
+/*Add Staff Table*/
+.staffTable,
+.activateArtistTable,
+.deleteStaffTable,
+.blockArtistTable,
+.blockCustomerTable{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.addStaffTable table{
+    width:60%;
+    margin:0 auto;
+    padding:30px;
+}
+.addStaffTable .auto-style3 {
+    padding: 50px 100px 50px 30px;
+}
+
+#btnBack {
+    display:inline-block;
+    margin-top:40px;
+    margin-left:30px;
+    background-color: #7180AC;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+#btnCreate {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/*view table*/
+.staffTable,
+.customerTable,
+.artistTable{
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+}
+    .staffTable .style1,
+    .artistTable .style1,
+    .customerTable .style1 {
+        width: 200px;
+    }
+    .staffTable .style2,
+    .artistTable .style2,
+    .customerTable .style2 {
+        width: 200px;
+    }
+    .staffTable .style3,
+    .artistTable .style3,
+    .customerTable .style3 {
+        width: 165px;
+    }
+    .staffTable .style4,
+    .artistTable .style4,
+    .customerTable .style4 {
+        width: 165px;
+    }
+    .staffTable .style5,
+    .artistTable .style5,
+    .customerTable .style5 {
+        width: 100px;
+    }

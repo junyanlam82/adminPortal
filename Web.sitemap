@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode title="Home" url="~/adminPortal/adminHome.aspx" description="">
+		<siteMapNode title="Staff">
+			<siteMapNode url="~/adminPortal/addStaff.aspx" title="Add Staff"  description="" />
+			<siteMapNode url="~/adminPortal/deleteStaff.aspx" title="Delete Staff"  description="" />
+			<siteMapNode url="~/adminPortal/viewStaff.aspx" title="View Staff"  description="" />
+		</siteMapNode>
+
+		<siteMapNode title="Artist">
+			<siteMapNode url="~/adminPortal/activateArtist.aspx" title="Activate Artist"  description="" />
+			<siteMapNode url="~/adminPortal/viewArtist.aspx" title="View Artist"  description="" />
+			<siteMapNode url="~/adminPortal/blockArtist.aspx" title="Block Artist"  description="" />
+		</siteMapNode>
+		
+		<siteMapNode title="Customer">
+			<siteMapNode url="~/adminPortal/viewCustomer.aspx" title="View Customer"  description="" />
+			<siteMapNode url="~/adminPortal/blockCustomer.aspx" title="Block Customer"  description="" />
+		</siteMapNode>
+	</siteMapNode>
+ </siteMap>

@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminPortal.master.cs" Inherits="adminPortal.adminPortal.adminPortal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="adminStyle.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div>
+                <table ID ="L_HEADER" >
+                    <tr >
+                        <td ><asp:HyperLink ID="hlAward" runat="server">Awards</asp:HyperLink></td>
+                        <td ><asp:HyperLink ID="hlHelp" runat="server">Need Help?</asp:HyperLink></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div>
+                <table id="R_HEADER">
+                    <tr >
+                        <td colspan="3"><asp:HyperLink ID="hlSignOut" runat="server">Sign Out</asp:HyperLink></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <table id="homeIcon">
+                    <tr >
+                        <td ><asp:HyperLink ID="hlHome" runat="server"><b>XXXX Art Gallery</b></asp:HyperLink></td>
+                    </tr>
+                </table>
+            
+                <table id="navPage">
+                    <tr>
+                        <td ><asp:HyperLink  ID="hlArtGallery" runat="server">Art Gallery</asp:HyperLink></td>
+                        <td ><asp:HyperLink  ID="hlArtist" runat="server">Artist</asp:HyperLink></td>
+                        <td ><asp:HyperLink  ID="hlDrawing" runat="server">Drawing</asp:HyperLink></td>
+                        <td ><asp:HyperLink  ID="hlPainting" runat="server">Painting</asp:HyperLink></td>
+                    </tr>
+                </table>
+            
+            </div>
+        </header>
+
+        <main>
+            <div id="content-n">
+            <table style="width:100%">
+               <tr>
+                   <td colspan="2"></td>
+               </tr>
+                <tr>
+                   <td colspan="2" style="text-align:center;padding:40px 0px 20px 0px;">
+                       <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Montserrat" Font-Size="20px" PathSeparator=" > " >
+                           <CurrentNodeStyle ForeColor="#333333" />
+                           <NodeStyle Font-Bold="True" ForeColor="#7C6F57" Width="200px"/>
+                           <PathSeparatorStyle Font-Bold="True" ForeColor="Black" />
+                           <RootNodeStyle Font-Bold="True" ForeColor="#5D7B9D" Font-Underline="false"/>
+                       </asp:SiteMapPath>
+                    </td>
+               </tr>
+                <tr>
+                   <td style="padding-bottom:30px;width:50px;">
+                       <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" NodeIndent="10" ShowExpandCollapse="False">
+                           <HoverNodeStyle Font-Underline="False" ForeColor="#78A1BB" />
+                           <NodeStyle Font-Names="Montserrat" Font-Size="12pt" ForeColor="#283044" HorizontalPadding="20px" NodeSpacing="10px" VerticalPadding="2px" />
+                           <ParentNodeStyle Font-Bold="True" />
+                           <SelectedNodeStyle  Font-Italic="True" Font-Underline="False" ForeColor="#E49273"/>
+                       </asp:TreeView>
+                       <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                    </td>
+                   <td>
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                   </td>
+               </tr>
+            </table>
+            </div>
+            <div id="newsFeed">
+
+            </div>
+        </main>
+        <footer>
+            <div id="fUpperBackground">
+                <div id="fDesign">
+                    <div class="fInfo">
+                        <h1>Contact Us</h1>
+                        <br />
+                        <ul>
+                            <li><a href="#">The Art Gallery</a></li>
+                            <li><a href="#">Affiliate Programs</a></li>
+                            <li><a href="#">Magazine</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="fInfo">
+                        <h1>XXX Art Gallery</h1>
+                        <br />
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Admin </a></li>
+                        </ul>
+                    </div>
+                    <div class="fInfo">
+                        <h1>For Who?</h1>
+                        <br />
+                        <ul>
+                            <li><a href="#">Art Agent</a></li>
+                            <li><a href="#">Artist Association</a></li>
+                            <li><a href="#">Interior Designer </a></li>
+                        </ul>
+                    </div>
+                    <div class="fSocialMedia">
+                        <h1>Social Media</h1>
+                        <img src="../Image/socialMedia/Facebook.png" alt="Facebook" class="fSocialMedia-size" />
+                        <img src="../Image/socialMedia/Instagram.png" alt="Instagram" class="fSocialMedia-size" />
+                        <img src="../Image/socialMedia/Twitter.png" alt="Twitter" class="fSocialMedia-size" />
+                        <img src="../Image/socialMedia/Linkedin.png" alt="Linkedin" class="fSocialMedia-size" />
+                        <img src="../Image/socialMedia/Youtube.png" alt="Youtube" class="fSocialMedia-size" />
+                        <img src="../Image/socialMedia/Whatsapp.png" alt="Whatsapp" class="fSocialMedia-size" />
+                    </div>
+                    
+                </div>
+                <div id="fCopyright">
+                    <p>&#169 2021 XXX ArtGallery</p>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
+
